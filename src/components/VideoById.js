@@ -87,7 +87,6 @@ const VideoById = ({ id }) => {
                     <h1 className=' font-semibold'> {data.items[0].snippet.channelTitle}</h1>
                   )}
                 </div>
-                {/* ... (other conditional rendering for properties) */}
               </div>
             </div>
           </>
