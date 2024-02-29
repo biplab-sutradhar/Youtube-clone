@@ -54,19 +54,6 @@ const ButtonList = () => {
         ))   }</div>
   );
 
-  // return (
-  //   <div className="font-roboto font-sans text-base text-black whitespace-nowrap overflow-x-auto overflow-y-hidden h-12">
-  //     {buttonNames.map((buttonName, index) => (
-  //       <div className='ms-1' key={index}>
-  //         <Button
-  //           name={buttonName}
-  //           onClick={() => handleButtonClick(buttonName)}
-  //           isActive={buttonName === activeButtonName}
-  //         />
-  //       </div>
-  //     ))}
-  //   </div>
-  // );
   
 };
 
