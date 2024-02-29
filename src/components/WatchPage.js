@@ -16,20 +16,21 @@ import ChannelIdVideo from './ChannelIdVideo';
 import Thumbnail from './Thumbnail';
 import { subscribeCar } from './utils/SubscribeSlice'; 
 import { addToHistory } from './history/historySlice';
+import { YOUR_API_KEY } from "./utils/constants";
+
 
 var id,channelId;
 const WatchPage = () => {
 const [ videoData, setVideoData] = useState([])
   
   const [ searchParams] = useSearchParams();
-  // console.log(searchParams.get("v"));
   id = searchParams.get("v");
   channelId = videoData[0]?.snippet?.channelId;
   
 
   const getVideoData = async () => {
     try {
-      const data = await fetch( `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${id}&key=AIzaSyDcEWjckGSrvzU0ROolSTKKYB2U3XLyk3Q`);
+      const data = await fetch( `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${id}&key=${YOUR_API_KEY}`);
       const json = await data.json();
       setVideoData(json.items);
       
