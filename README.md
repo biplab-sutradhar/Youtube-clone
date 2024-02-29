@@ -4,7 +4,7 @@ A YouTube clone built with React and Redux. Allows users to search and view YouT
 
 ## Features
  * Authentication with Firebase
-  - SignUp,SignOut
+    - SignUp, SignOut
  * Subscribe to a channel
  * View Subscribed Channels
  * View liked videos
@@ -20,10 +20,7 @@ A YouTube clone built with React and Redux. Allows users to search and view YouT
 ## Home Page
 ![image](https://github.com/biplab987/Youtube-clone/assets/130878396/cff88f58-be4d-42e0-a7d9-5612c5d41c09)
 
-## Watch Page
-![image](https://github.com/biplab987/Youtube-clone/assets/130878396/75e8aed8-c2e0-4ca5-9e0c-9f8b5e09daec)
-
-## Comments and featured videos
+## Watch Page, Comments and featured videos
 ![image](https://github.com/biplab987/Youtube-clone/assets/130878396/97a930c0-478d-4ccd-9a40-c287e069914e)
 
 ## subscribed channels 
