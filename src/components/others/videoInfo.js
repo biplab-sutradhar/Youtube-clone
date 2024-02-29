@@ -12,11 +12,7 @@ const VideoInfo = ({videoId}) => {
           `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${videoId}&key=${YOUR_API_KEY}`
         );
         const data = await response.json();
-        // console.log(data);
-        // const thumbnailUrl = data.items[0]?.snippet?.thumbnails?.default?.url;
         setInfo(data.items);
-        // console.log(channelId);
-
       } catch (error) {
         console.error('Error fetching channel data:', error);
       }
