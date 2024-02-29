@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { ShimmerSearchVideo } from './others/Shimmer';
 import VideoInfo from './others/videoInfo';
-// import VideoInfo from './others/videoinfo';
-// import VideoInfo from './others/Videoinfo';
+import { YOUR_API_KEY } from "./utils/constants";
+
 
 const SearchVideo = () => {
   const [searchParams] = useSearchParams();
@@ -17,7 +17,7 @@ const SearchVideo = () => {
     setIsLoading(true);
     setError(null);
     try {
-      const response = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q=${searchText}&key=AIzaSyDcEWjckGSrvzU0ROolSTKKYB2U3XLyk3Q`);
+      const response = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q=${searchText}&key=${YOUR_API_KEY}`);
       const data = await response.json();
       // console.log(data);
       if (data.items) {
