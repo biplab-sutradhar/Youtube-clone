@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import {getAuth, GoogleAuthProvider} from "firebase/auth"
 import { getStorage } from "firebase-storage";
 const firebaseConfig = {
-  apiKey: "AIzaSyCCKCjWU7LKPOiyt15j2SbpkHBfM7nSAyo",
+  apiKey: "YOUR_API_KEY",
   authDomain: "fir-1cffc.firebaseapp.com",
   projectId: "fir-1cffc",
   storageBucket: "fir-1cffc.appspot.com",
   messagingSenderId: "93495635026",
-  appId: "1:93495635026:web:0c05e07403e217f56b838b",
-  measurementId: "G-DV14FJ8P5C"
+  appId: "1:93495635026:web:...",
+  measurementId: "G-...."
 };
 
 const app = initializeApp(firebaseConfig);
