@@ -15,6 +15,7 @@ A YouTube clone built with React and Redux. Allows users to search and view YouT
  * React.js
  * React-redux
  * Tailwind CSS
+ * YouTube Data API v3
 
 ## Home Page
 ![image](https://github.com/biplab987/Youtube-clone/assets/130878396/cff88f58-be4d-42e0-a7d9-5612c5d41c09)
