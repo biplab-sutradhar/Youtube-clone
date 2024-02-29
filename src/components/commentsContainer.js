@@ -3,6 +3,8 @@ import { useSearchParams } from 'react-router-dom';
 import { BiLike } from "react-icons/bi";
 import { BiDislike } from "react-icons/bi";
 import { ShimmerOthers } from './others/Shimmer';
+import { YOUR_API_KEY } from "./utils/constants";
+
 
  const CommentsList = ({ comments }) => {
   return (
@@ -48,9 +50,9 @@ const CommentsContainer = () => {
   useEffect(() => {
     const getCommentData = async () => {
       try {
-        const response = await fetch(`https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=${id}&key=AIzaSyDcEWjckGSrvzU0ROolSTKKYB2U3XLyk3Q`)
+        const response = await fetch(`https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=${id}&key=${YOUR_API_KEY}`)
          const data = await response.json();
-        setCommentsData(data.items); // Assigning only the 'items' array
+        setCommentsData(data.items); 
       } catch (error) {
         console.error('Error fetching comments:', error.message);
       }
