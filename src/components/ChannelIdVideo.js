@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { YOUR_API_KEY } from "./utils/constants";
 import { Link } from 'react-router-dom';
-// import VideoById from './VideoById';
 import Thumbnail from './Thumbnail';
 
 const ChannelIdVideo = ({info,height,padding}) => {
@@ -10,7 +9,6 @@ const ChannelIdVideo = ({info,height,padding}) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // const response = await fetch(`https://youtube.googleapis.com/youtube/v3/channelSections?part=snippet%2CcontentDetails&channelId=${info}&key=${YOUR_API_KEY}`);
         const response = await fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=20&regionCode=AU&key=${YOUR_API_KEY}`)
         
         if (!response.ok) {
