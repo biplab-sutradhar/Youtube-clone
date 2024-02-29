@@ -10,6 +10,7 @@ A YouTube clone built with React and Redux. Allows users to search and view YouT
  * View liked videos
  * View History videos
  * Search Videos
+ * Voice Typing
 
 ## Used Technologies
  * React.js
