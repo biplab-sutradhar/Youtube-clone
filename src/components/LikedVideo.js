@@ -2,7 +2,6 @@ import { useSelector } from 'react-redux';
 import VideoById from './VideoById';
 
 function LikeVideo() {
-  // Use the useSelector hook to select the cart data from the Redux store
   const cart = useSelector((state) => state.video.cart);
   console.log(cart);
   return (
