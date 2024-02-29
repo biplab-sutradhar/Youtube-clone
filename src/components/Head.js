@@ -20,8 +20,6 @@ const Head = () => {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const searchCache = useSelector ((store) => store.search)
-  // const searchInput = useRef(null);
-  // const navigate = useNavigate();
 
  
   const { transcript, listening } = useSpeechRecognition();
@@ -50,8 +48,8 @@ const Head = () => {
       }
 
       const searchData = await data.json();
-      setSearchTerm(searchData[0]);  //  search term is the first element
-      setSuggestions(searchData[1]); //  suggestions are in the second element
+      setSearchTerm(searchData[0]);  
+      setSuggestions(searchData[1]); 
       dispatch(CacheResults({
         [searchQ] : searchData[1],
       })
@@ -69,13 +67,7 @@ const Head = () => {
   const toggleMenuHandler = () => {
     dispatch(toggleMenu());
   };
-
-  // const handleSuggestionClick = (suggestion) => {
-  //   console.log("Selected suggestion:", suggestion);
-  //   setSearch(suggestion);
-  // };
-
-  // console.log(suggestions);
+y
 
   const start = () => {
     SpeechRecognition.startListening(({ transcript }) => {
