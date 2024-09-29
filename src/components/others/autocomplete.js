@@ -3,15 +3,15 @@ import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import { styled } from '@mui/material/styles';
 
-// Custom styled TextField
+ 
 const CustomTextField = styled(TextField)({
   '& .MuiOutlinedInput-root': {
-    borderRadius:  '9999px 0 0 9999px', // Full rounded borders
-    backgroundColor: 'rgba(174, 255, 0, 0.3)', // Lime background with some transparency
-    border: 'none', // Remove border
-     height: '50px', // Set height
+    borderRadius:  '9999px 0 0 9999px', 
+    backgroundColor: 'rgba(174, 255, 0, 0.3)', 
+    border: 'none',  
+     height: '50px', 
     '& .MuiInputBase-input': {
-      height: '28px', // Set height of the input field
+      height: '28px', 
     },
   },
 });
